@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Layout 7</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 3fr 1fr;
+        gap: 1em;
+        grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer";
+      }
+
+      header {
+        grid-area: header;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+      }
+
+      nav {
+        grid-area: nav;
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+
+      main {
+        grid-area: main;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+      }
+
+      footer {
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-7">
