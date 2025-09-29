@@ -14,5 +14,53 @@
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      body > * {
+        min-height: 1em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 100%;
+      }
+
+      header, .cyan {
+        background: #009FDF;
+        height: 150px;
+        
+      }
+
+      nav, .magenta {
+        background: #D40F7D;
+        height: 75px;
+      }
+
+      main, .yellow {
+        background: #FAE100;
+        height: calc(100vh - 325px);
+      }
+
+      footer, .black {
+        background: #2C2A29;
+        color: white;
+        height: 100px;
+      }
+
+      a, a:visited {
+        color: inherit;
+      }
+    </style>
   </body>
 </html>

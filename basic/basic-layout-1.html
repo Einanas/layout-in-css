@@ -17,5 +17,51 @@
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
+    <style>
+
+      /* GRID LAYOUT */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        font-family: sans-serif;
+        grid-template-columns: 150px auto;
+        grid-template-rows: 150px auto 150px;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+        gap: 15px;
+      }
+      body > * {
+        min-height: 1em;
+      }
+      h1 {
+        margin: 0;
+        font-size: 100%;
+      }
+      header, .cyan {
+        background: #009FDF;
+        grid-area: header;
+      }
+      nav, .magenta {
+        background: #D40F7D;
+        grid-area: nav;
+      }
+      main, .yellow {
+        background: #FAE100;
+        grid-area: main;
+      }
+      footer, .black {
+        background: #2C2A29;
+        color: white;
+        grid-area: footer;
+        
+      }
+      a, a:visited {
+        color: inherit;
+      }
+    </style>
   </body>
 </html>
